@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>hkgkhanh - Cubing</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Verdana">
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+	</head>
+	<body>
+
+		<div id="navbar">
+			<a id="link-homepage" href="index.html">
+				Trang chủ
+			</a>
+			<a id="link-cubing" href="cubing.html">
+				Cubing
+			</a>
+			<a id="link-coding" href="index.html">
+				Coding
+			</a>
+			<a id="link-other" href="index.html">
+				Khác
+			</a>
+		</div>
+		<div id="langdiv">
+			<p><span id="view-in-lang">xem trang này bằng</span> <span class="lang-text" onclick="change_lang(0)">Tiếng Việt</span> / <span class="lang-text" onclick="change_lang(1)">English</span> / <span class="lang-text" onclick="change_lang(2)">Français</span></p>
+		</div>
+
+		<div id="body">
+			<h1 id="h1">Cubing</h1>
+			<p id="below-h1">WCAID: 2022KHAN31</p>
+			<hr>
+
+			<!--<div id="links-box">
+				<a href="https://github.com/hkgkhanh" target="_blank">
+					<i class="fi fi-brands-github"></i>
+					github.com/hkgkhanh
+				</a>
+				<a href="mailto:khanh.nq121004@gmail.com" target="_blank">
+					<i class="fi fi-bs-envelope"></i>
+					khanh.nq121004@gmail.com
+				</a>
+				<a href="https://www.youtube.com/@nqkhanhskewb" target="_blank">
+					<i class="fi fi-brands-youtube"></i>
+					@nqkhanhskewb
+				</a>
+				<a href="https://www.worldcubeassociation.org/persons/2022KHAN31" target="_blank">
+					<i class="fi fi-bs-grid"></i>
+					WCAID:2022KHAN31
+				</a>
+			</div>-->
+			<hr>
+
+			<div id="flex-box">
+				<a href="index.html">
+					<img src="images/skb_1.jpg">
+					Skewb
+				</a>
+				<a href="index.html">
+					<img src="images/sq1_1.jpg">
+					Square-1
+				</a>
+				<a href="index.html">
+					<img src="images/coding.png">
+					Clock
+				</a>
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+
+			function getElement(id)
+			{
+				return document.getElementById(id);
+			}
+			function change_lang(i)
+			{
+				if (i == 0)
+				{
+					getElement("link-homepage").innerHTML = "Trang chủ";
+					getElement("link-other").innerHTML = "Khác";
+					getElement("view-in-lang").innerHTML = "xem trang này bằng";
+					getElement("h1").innerHTML = "Website cá nhân của Nông Quốc Khánh";
+					getElement("below-h1").innerHTML = "Ở đây lưu trữ những dự án code (linh tinh?) mà mình đã làm từ trước đến nay, tất tần tật về kiến thức chơi cube của mình..., nói chung là những gì mình muốn chia sẻ lên mạng (chủ yếu là về cubing thôi).";
+				}
+				else if (i == 1)
+				{
+					getElement("link-homepage").innerHTML = "Homepage";
+					getElement("link-other").innerHTML = "Other";
+					getElement("view-in-lang").innerHTML = "view this page in";
+					getElement("h1").innerHTML = "Nông Quốc Khánh's personal website";
+					getElement("below-h1").innerHTML = "Here, I archive most of my personal coding projects, my cubing knowledge..., basically anything that I think is worth sharing (mostly cubing related).";
+				}
+				else if (i == 2)
+				{
+					getElement("link-homepage").innerHTML = "Accueil";
+					getElement("link-other").innerHTML = "Autre";
+					getElement("view-in-lang").innerHTML = "voir cette page en";
+					getElement("h1").innerHTML = "Le site personnel de Nông Quốc Khánh";
+					getElement("below-h1").innerHTML = "Ici, j'archive la plupart de mes projets personnels de codage, ma connaissance du cubing..., essentiellement n'importe quoi que je voudrais partager (surtout au cubing).";
+				}
+			}
+		</script>
+
+	</body>
+</html>
