@@ -1,0 +1,134 @@
+body
+{
+	margin: 0;
+	font-family: "Verdana", sans-serif;
+	background-color: #B5DAE6;
+	font-size: 18px;
+	cursor: default;
+}
+
+#navbar
+{
+	display: flex;
+	justify-content: right;
+	background-color: #B5DAD9;
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+}
+
+#navbar a
+{
+	padding: 1em;
+	text-align: center;
+}
+
+#navbar a:hover
+{
+	cursor: pointer;
+	background-color: #8BA7B0;
+}
+
+#body
+{
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+#flex-box
+{
+	display: flex;
+	justify-content: center;
+	background-color: none;
+}
+
+#flex-box a
+{
+	width: 15em;
+	margin: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+	background-color: #8DAAB3;
+	border-radius: 1em;
+}
+
+#flex-box a img
+{
+	width: 100%;
+	height: auto;
+	background-color: none;
+	border-radius: 1em 1em 0 0;
+	margin-bottom: 1em;
+}
+
+#flex-box a:hover
+{
+	cursor: pointer;
+	background-color: #516166;
+}
+
+#flex-box a:hover img
+{
+	filter: brightness(90%);
+}
+
+a:link, a:visited, a:hover, a:active
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+.fi
+{
+	font-size: 2em;
+	vertical-align: middle;
+}
+
+#links-box
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  	align-items: center;
+	background-color: none;
+}
+
+#links-box a
+{
+	width: 18em;
+	margin: 1em;
+	padding: 1em;
+	text-align: center;
+	background-color: #8DAAB3;
+	border-radius: 1em;
+}
+
+#links-box a:hover
+{
+	cursor: pointer;
+	background-color: #516166;
+}
+
+hr
+{
+	display: block;
+  	margin-top: 0.5em;
+  	margin-bottom: 0.5em;
+  	margin-left: auto;
+  	margin-right: auto;
+  	border-style: solid;
+  	border-width: 1px;
+}
+
+.lang-text:hover
+{
+	cursor: pointer;
+	background-color: #8BA7B0;
+}
+
+#langdiv
+{
+	font-size: 0.8em;
+	text-align: right;
+}
