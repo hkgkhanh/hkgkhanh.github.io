@@ -5,6 +5,7 @@ body
 	background-color: #B5DAE6;
 	font-size: 18px;
 	cursor: default;
+	z-index: 0;
 }
 
 #navbar
@@ -15,6 +16,7 @@ body
 	position: -webkit-sticky;
   	position: sticky;
   	top: 0;
+  	z-index: 1;
 }
 
 #navbar a
@@ -39,14 +41,15 @@ body
 #flex-box
 {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	background-color: none;
 }
 
 #flex-box a
 {
-	width: 15em;
-	height: 20em;
+	width: 12em;
+	height: 18em;
 	margin: 1em;
 	padding-bottom: 1em;
 	text-align: center;
@@ -67,7 +70,7 @@ body
 #flex-box a:hover
 {
 	cursor: pointer;
-	background-color: #516166;
+	filter: brightness(90%);
 }
 
 #flex-box a:hover img
@@ -109,7 +112,7 @@ a:link, a:visited, a:hover, a:active
 #links-box a:hover
 {
 	cursor: pointer;
-	background-color: #516166;
+	filter: brightness(90%);
 }
 
 hr
