@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>hkgkhanh - Skewb</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Verdana">
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+	</head>
+	<body>
+
+		<div id="navbar">
+			<a id="link-homepage" href="index.html">
+				Trang chủ
+			</a>
+			<a id="link-cubing" href="cubing.html">
+				Cubing
+			</a>
+			<a id="link-coding" href="index.html">
+				Coding
+			</a>
+			<a id="link-other" href="index.html">
+				Khác
+			</a>
+		</div>
+		<div id="langdiv">
+			<p><span id="view-in-lang">xem trang này bằng</span> <span class="lang-text" onclick="change_lang(0)">Tiếng Việt</span> / <span class="lang-text" onclick="change_lang(1)">English</span> / <span class="lang-text" onclick="change_lang(2)">Français</span></p>
+		</div>
+
+		<div id="body">
+			<h1 id="h1">Skewb</h1>
+			<p id="below-h1">Dưới đây là link đến các nguồn mà mình đã làm để học công thức, layer hoặc trick hay ho; và công thức cho toàn bộ 134 trường hợp L2L mà mình dùng.</p>
+			<hr>
+
+			<div id="skewb-links-box">
+				<a href="https://docs.google.com/spreadsheets/d/1sTiNnP4P0UfySUNEZVTCSAuy9-Mneaomy8io7wjSQGQ/edit?usp=sharing" target="_blank">
+					<img src="images/drive.png">
+					Skewb sheet
+				</a>
+				<a href="https://youtu.be/D-WGl6OPAuY" target="_blank">
+					<img src="images/youtube.png">
+					<span id="youtube-name">Video công thức</span>
+				</a>
+			</div>
+			<hr>
+
+			<div id="algs-box">
+				<div>
+					<img src="images/ns/ns1.png"><br>
+					R r' b' r' R r' R r
+					<a href="https://youtu.be/D-WGl6OPAuY?si=0Tu7VMJ2XxtP4CEY" target="_blank">
+						<i class="fi fi-brands-youtube"></i>
+					</a>
+				</div>
+				<div>
+					<img src="images/ns/ns2.png"><br>
+					x r' R r R r' R' r z' r' R r R' B'
+					<a href="https://youtu.be/D-WGl6OPAuY?si=CGQY3Sm98fUfu8Zl&t=9" target="_blank">
+						<i class="fi fi-brands-youtube"></i>
+					</a>
+				</div>
+				<div>
+					<img src="images/ns/ns3.png"><br>
+					x B R' B' r' R' r B R B' R
+					<a href="https://youtu.be/D-WGl6OPAuY?si=nuPQJjm0_H0pXeRC&t=19" target="_blank">
+						<i class="fi fi-brands-youtube"></i>
+					</a>
+				</div>
+				<div>
+					<img src="images/ns/ns4.png"><br>
+					x r' R r B R B' r' R' r R'
+					<a href="https://youtu.be/D-WGl6OPAuY?si=sA-jyvAjESRqU1zK&t=28" target="_blank">
+						<i class="fi fi-brands-youtube"></i>
+					</a>
+				</div>
+				<div>
+					<img src="images/ns/ns5.png"><br>
+					x r B R' B' r R r R' r' R r
+					<a href="https://youtu.be/D-WGl6OPAuY?si=RILupE3e_txwb2jM&t=37" target="_blank">
+						<i class="fi fi-brands-youtube"></i>
+					</a>
+				</div>
+				<div>
+					<img src="images/ns/ns6.png"><br>
+					x z' R b R' z' R r' R' B' r
+					<a href="https://youtu.be/D-WGl6OPAuY?si=p0UiBZYLY-oyFzrl&t=48" target="_blank">
+						<i class="fi fi-brands-youtube"></i>
+					</a>
+				</div>
+				<div>
+					<img src="images/ns/ns7.png"><br>
+					x R r' R r B R' B' r' R' r
+					<a href="https://youtu.be/D-WGl6OPAuY?si=FAzE6pc24-sRx7Ng&t=59" target="_blank">
+						<i class="fi fi-brands-youtube"></i>
+					</a>
+				</div>
+				<div>
+					<img src="images/ns/ns8.png"><br>
+					x z2 r' R r R' r' R' r B R' B' R'
+					<a href="https://youtu.be/D-WGl6OPAuY?si=PFH5L6-trIGBG8l_&t=69" target="_blank">
+						<i class="fi fi-brands-youtube"></i>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+
+			function getElement(id)
+			{
+				return document.getElementById(id);
+			}
+			function change_lang(i)
+			{
+				if (i == 0)
+				{
+					getElement("link-homepage").innerHTML = "Trang chủ";
+					getElement("link-other").innerHTML = "Khác";
+					getElement("view-in-lang").innerHTML = "xem trang này bằng";
+					getElement("h1").innerHTML = "Skewb";
+					getElement("below-h1").innerHTML = "Dưới đây là link đến các nguồn mà mình đã làm để học công thức, layer và trick hay ho; và công thức cho toàn bộ 134 trường hợp NS mà mình dùng.";
+					getElement("youtube-name").innerHTML = "Video công thức";
+				}
+				else if (i == 1)
+				{
+					getElement("link-homepage").innerHTML = "Homepage";
+					getElement("link-other").innerHTML = "Other";
+					getElement("view-in-lang").innerHTML = "view this page in";
+					getElement("h1").innerHTML = "Skewb";
+					getElement("below-h1").innerHTML = "These are links to all the resources that I made to learn algs, layer efficiency and cool tricks; and algs that I use for all 134 NS cases.";
+					getElement("youtube-name").innerHTML = "Algs video";
+				}
+				else if (i == 2)
+				{
+					getElement("link-homepage").innerHTML = "Accueil";
+					getElement("link-other").innerHTML = "Autre";
+					getElement("view-in-lang").innerHTML = "voir cette page en";
+					getElement("h1").innerHTML = "Skewb";
+					getElement("below-h1").innerHTML = "Ce sont les ressources que j'ai créé pour apprendre les algs, l'efficacité de la couche et des bons tricks; et les algs que j'utilise pour tous les 134 cas du NS.";
+					getElement("youtube-name").innerHTML = "Vidéo des algs";
+				}
+			}
+		</script>
+
+	</body>
+</html>

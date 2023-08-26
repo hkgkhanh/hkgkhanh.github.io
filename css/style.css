@@ -12,7 +12,7 @@ body
 {
 	display: flex;
 	justify-content: right;
-	background-color: #B5DAD9;
+	background-color: #8DAAB3;
 	position: -webkit-sticky;
   	position: sticky;
   	top: 0;
@@ -23,12 +23,13 @@ body
 {
 	padding: 1em;
 	text-align: center;
+	background-color: #8DAAB3;
 }
 
 #navbar a:hover
 {
 	cursor: pointer;
-	background-color: #8BA7B0;
+	filter: brightness(90%);
 }
 
 #body
@@ -118,22 +119,86 @@ a:link, a:visited, a:hover, a:active
 hr
 {
 	display: block;
-  	margin-top: 0.5em;
-  	margin-bottom: 0.5em;
+  	margin-top: 1em;
+  	margin-bottom: 1em;
   	margin-left: auto;
   	margin-right: auto;
   	border-style: solid;
-  	border-width: 1px;
+  	border-width: 0px;
 }
 
 .lang-text:hover
 {
 	cursor: pointer;
-	background-color: #8BA7B0;
+	background-color: #8DAAB3;
 }
 
 #langdiv
 {
 	font-size: 0.8em;
 	text-align: right;
+}
+
+#skewb-links-box
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  	align-items: center;
+	background-color: none;
+}
+
+#skewb-links-box a
+{
+	width: 18em;
+	margin: 1em;
+	padding: 0.5em 1em;
+	text-align: center;
+	background-color: #8DAAB3;
+	border-radius: 1em;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+}
+
+#skewb-links-box a:hover
+{
+	cursor: pointer;
+	filter: brightness(90%);
+}
+
+#skewb-links-box a img
+{
+	margin-right: 1em;
+}
+
+#algs-box
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: none;
+}
+
+#algs-box div
+{
+	width: 14em;
+	margin: 1em;
+	padding-top: 0.5em;
+	text-align: center;
+	background-color: #8DAAB3;
+	border-radius: 1em;
+}
+
+#algs-box div img
+{
+	width: 13em;
+	object-fit: cover;
+	background-color: none;
+	margin-bottom: 1em;
+}
+
+#algs-box div a
+{
+	margin-right: 0em;
 }
