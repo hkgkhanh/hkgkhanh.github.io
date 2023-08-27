@@ -183,8 +183,8 @@ hr
 #algs-box div
 {
 	width: 14em;
-	margin: 1em;
-	padding-top: 0.5em;
+	margin: 0.5em;
+	padding: 0.5em;
 	text-align: center;
 	background-color: #8DAAB3;
 	border-radius: 1em;
@@ -198,7 +198,12 @@ hr
 	margin-bottom: 1em;
 }
 
-#algs-box div a
+.fi-brands-youtube, .fi-bs-envelope
 {
-	margin-right: 0em;
+	color: #cc0000;
+}
+
+.fi-brands-github
+{
+	color: #990073;
 }
